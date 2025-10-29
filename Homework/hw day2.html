@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container text-center">
-        <h1 class="display-2">Team Profile</h1>
+        <h1 class="display-2 fw-bold">Team Profile</h1>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magnam aliquid, sunt odit nulla error.</h4>
         <div class="container">
             <blockquote class="blockquote bg-danger text-white">
@@ -26,7 +26,34 @@
           alt="Profile Picture"
           height="180px"
           width="180px"
-          class="rounded-circle my-10">
+          class="rounded-circle mt-5">
+          <table class="table table-striped table-bordered my-5">
+             <thead class="bg-primary">
+                <tr>
+                    <th>Name</th>
+                    <th>Roles</th>
+                    <th>Status</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>Anjana</td>
+                    <td>Front-End developer</td>
+                    <td class="bg-success">Active</td>
+                </tr>
+                <tr>
+                    <td>Anjali</td>
+                    <td>UI/UX Designer</td>
+                    <td class="bg-warning">Leave</td>
+                </tr>
+                <tr>
+                    <td>Suttu</td>
+                    <td>Software Engineer</td>
+                    <td class="bg-danger">Resigned</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="alert alert-danger " role="alert">One or more employees are not currently active!</div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
