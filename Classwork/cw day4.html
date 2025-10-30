@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>FAQ</title>
+    <style>
+        body{
+            background-color: rgb(229, 226, 221);
+        }
+        #cards{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 150px;
+            flex-wrap: wrap;
+        }
+        .dropdown-item:hover{
+            background-color: rgb(110, 205, 217);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="text-light bg-primary text-center p-4">
+            <h2 text-light>Customer Support</h2>
+            <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, commodi.</h5>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <h3 class=" text-center mb-4">Frequently Asked Questions</h3>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a href="#qn1" class="card-link" data-toggle="collapse">
+                        Why is our company the best ?
+                    </a>
+                </div>
+                <div id="qn1" class="collapse show"  data-parent="#accordion" >
+                    <div class="card-body">
+                        <p id="#qn1"">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, quam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- qn 1 closed -->
+
+            <div class="card">
+                <div class="card-header">
+                    <a href="#qn2" class="card-link" data-toggle="collapse">
+                        Why does everyone prefer our campany ? ?
+                    </a>
+                </div>
+                <div id="qn2" class="collapse"  data-parent="#accordion" >
+                    <div class="card-body">
+                        <p id="#qn2"">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, quam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- qn 2 closed -->
+
+            <div class="card">
+                <div class="card-header">
+                    <a href="#qn3" class="card-link" data-toggle="collapse">
+                        What are the benifits you get from shopping with us ?
+                    </a>
+                </div>
+                <div id="qn3" class="collapse"  data-parent="#accordion" >
+                    <div class="card-body">
+                        <p id="#qn1"">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, quam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- qn 3 closed -->
+        </div>
+        <!-- accordion closed -->
+
+        <h3 class="mt-4 text-center">Customer Support Agents</h3>
+        <div id="cards">
+            <div class="card mt-3 text-center" style="width: 240px; height: 400px;">
+                <img class="card-img-top"
+                src="https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                alt="Profile Picture" height="210px">
+                <div class="card-body">
+                    <h4 class="text-center">Mr. Rahul</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                    <div class="dropdown">
+                        <button class="btn btn-primary btn-info dropdown-toggle"
+                        data-toggle="dropdown" type="button">
+                        Contact Us
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Call</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Message</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">E-mail</a>
+                        </div>
+                    </div>
+                    <!-- dropdown closed -->
+                </div>
+            </div>
+            <!-- card closed -->
+
+            <div class="card mt-3 text-center" style="width: 240px; height: 400px;"> 
+                <img class="card-img-top"
+                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvPjv1lHEIpzgDk_e3Sm-e4EVOzggYdb5aHA&s"
+                 alt="Profile Picture"
+                 height="210px">
+                <div class="card-body">
+                    <h4 class="card-title">Mrs. Shreya</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <div class ="dropdown">
+                        <button type="button" class="btn btn-info dropdown-toggle"
+                         data-toggle="dropdown">
+                         Contact Us
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Call</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Message</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">E-mail</a>
+                        </div>
+                    </div>
+                    <!-- dropdown closed -->
+                </div>
+            </div>
+            <!-- card closed -->
+
+            <div class="card mt-3 text-center" style="width:240px; height:400px">
+                <img class="card-img-top"
+                 src="https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVuJTIwcHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D&fm=jpg&q=60&w=3000"
+                 alt="Card image"
+                 height="210px">
+                <div class="card-body">
+                    <h4 class="card-title">Mr. Sumit</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                    <div class="dropwodn">
+                        <div class="dropdown">                            
+                            <button class="btn btn-info dropdown-toggle" data-toggle="dropdown">Contact Us</button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="">Call</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">Message</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="">E-mail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- dropdown closed -->
+                </div>
+                <!-- card body closed -->
+            </div>
+            <!-- card closed -->
+        </div>
+        <!-- cards container closed -->
+    </div>
+    <!-- main container closed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>
