@@ -26,28 +26,43 @@
                     placeholder="Enter your email" required>
                 </div>
                 <div class="form-group">
+                    <label class="form-label" for="number">
+                        Contact number:                    
+                    </label>
+                    <input class="form-control" type="tel" name="number" id="number"
+                    placeholder="Enter your telephone number" required maxlength="15">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="method">
+                        Preferred contact method (Email or Phone):                    
+                    </label>
+                    <input class="form-control" type="text" name="method" id="method"
+                    placeholder="Enter your preferred contact method" required>
+                </div>
+                <div class="form-group">
                     <label class="form-label" for="feedback">Feedback / Suggestions:</label>
                     <textarea class="form-control" name="feedback" id="feedback"></textarea>
                 </div>
                 <div class="form-group">
                     <label class="form-label" for="dropdown">
-                        How did you find us?
+                        Type of order:
                     </label>
                     <select class="form-control" name="dropdown" id="dropdown" required>
                         <option value="">Choose an option...</option>
-                        <option value="search">Search engine</option>
-                        <option value="social">Social Media</option>
-                        <option value="frnd">Friend or Family</option>
-                        <option value="advertisement">Advertisement</option>
+                        <option value="search">Cookies</option>
+                        <option value="social">Cake</option>
+                        <option value="frnd">Pastries</option>
+                        <option value="advertisement">Juices</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
                 <label class="form-label">How much will you rate us?</label>
-                <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-around">
                     <div class="form-check">
                         <input class="form-check-input" value="1" type="radio" name="radio" id="r1" required>
                         <label class="form-check-label" for="r1">1</label>
                     </div>
+                    
                     <div class="form-check">
                         <input class="form-check-input" value="2" type="radio" name="radio" id="r2">
                         <label class="form-check-label" for="r2">2</label>
@@ -67,11 +82,36 @@
                         <input class="form-check-input" value="5" type="radio" name="radio" id="r5">
                         <label class="form-check-label" for="r5">5</label>
                     </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" value="6" type="radio" name="radio" id="r6">
+                        <label class="form-check-label" for="r6">6</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" value="7" type="radio" name="radio" id="r7">
+                        <label class="form-check-label" for="r7">7</label>
+                    </div>
                     
+                    <div class="form-check">
+                        <input class="form-check-input" value="8" type="radio" name="radio" id="r8">
+                        <label class="form-check-label" for="r8">8</label>
                     </div>
-                    <div class="text-center mt-5">
-                        <button class="btn btn-info px-5" type="submit">Submit</button>
+
+                    <div class="form-check">
+                        <input class="form-check-input" value="9" type="radio" name="radio" id="r9">
+                        <label class="form-check-label" for="r5">9</label>
                     </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" value="10" type="radio" name="radio" id="r10">
+                        <label class="form-check-label" for="r10">10</label>
+                    </div>
+                    
+                </div>
+
+                <div class="text-center mt-5">
+                    <button class="btn btn-info px-5" type="submit">Submit</button>
                 </div>
             </form>
         </div>
