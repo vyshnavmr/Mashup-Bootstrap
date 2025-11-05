@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Sign Up</title>
+</head>
+<body class="bg-primary">
+    <form action="">   
+        <div class="container">
+            <div class="card mt-5">
+                <div class="card-header px-5">
+                    <h1>Sign Up</h1>
+                    <p>Please fill in the form to create an account</p>
+                </div>
+                <div class="card-body px-4 mt-2">
+                    <div class="form-group form-inline">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control bg-light" placeholder="First Name:" required>
+                            </div>
+                            <div class="col-sm-5 ml-sm-5 ml-0">
+                                <input type="text" class="form-control bg-light" placeholder="Last Name:" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control bg-light" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control bg-light" minlength="10" placeholder="Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control bg-light" minlength="10" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="terms" id="terms" required>
+                        <label for="terms" class="form-label">I accept the <a href="" data-toggle="modal" data-target="#conditions">Terms Of Use</a> & <a href="" data-toggle="modal" data-target="#privacy">Privacy policy</a> </label>
+                    </div>
+                    <button class="btn btn-primary px-5" type="submit">Sign Up</button>
+                </div>
+            </div>
+            <p class="text-center text-light mt-3">Already have an account ? <a href="#" class="text-light text-decoration-underline"><u>Login here</u></a></p>
+        </div>
+    </form>
+
+    <!-- Modal 1 : conditions  -->
+    <div class="modal" id="conditions">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content p-5">
+                <div class="modal-header">
+                    <h3 class="modal-title">Terms and Conditions</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>By accessing or using this project/application, you agree to comply with the following terms and conditions. All content, data, and materials provided are for educational or project purposes only and must not be used for unauthorized or commercial activities. The developers are not responsible for any data loss, misuse, or system errors arising from improper use. Users must ensure that any information submitted is accurate and lawful. Unauthorized copying, modification, or redistribution is strictly prohibited. These terms are subject to change without prior notice. Continued use after updates signifies acceptance of revised terms and conditions. Users must ensure that their activities within the project or application comply with all applicable laws and regulations. Any misuse, hacking attempts, or unauthorized data access will result in immediate termination of access and possible legal action. The developers reserve the right to suspend or restrict services for maintenance, updates, or security purposes without prior notice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 : pivacy policy -->
+    <div class="modal" id="privacy">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content p-5">
+                <div class="modal-header">
+                    <h3 class="modal-title">Privacy Policies</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>This Privacy Policy explains how we collect, use, and protect your personal information while using this project/application. We may collect basic details such as your name, email address, and usage data to improve functionality and user experience. All collected information is handled securely and will not be shared, sold, or disclosed to third parties unless required by law or with your explicit consent. Cookies or similar technologies may be used to enhance navigation and track performance. Users have the right to access, modify, or delete their data upon request. We implement industry-standard security measures to prevent unauthorized access, loss, or alteration of information. However, no online platform can guarantee absolute security. By using this application, you consent to the practices described in this policy. We reserve the right to update or modify this Privacy Policy at any time, and continued use indicates your acceptance of such changes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>    
+</body>
+</html>
